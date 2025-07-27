@@ -5,9 +5,12 @@
 
     <!-- bean definitions here -->
     <bean id="alien" class="org.example.Alien">
-        <property name="age" value="31"></property> <!--        setter injection-->
-        <property name="lap" ref="Lap"></property>
 
+<!--        <constructor-arg index="0" value="31"/> index based-->
+<!--        <constructor-arg index="1" ref="Lap"/>-->
+
+<!--        <constructor-arg name="age" value="31"/>  name based but it will follow sequence. one more is type based when u have different types-->
+<!--        <constructor-arg name="org.example.Laptop" ref="Lap"/>-->
 
     </bean>
 

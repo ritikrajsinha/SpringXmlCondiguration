@@ -9,6 +9,11 @@ public class Alien {
 
     private Laptop lap;
 
+    public Alien(int age, Laptop lap) {
+        this.age = age;
+        this.lap = lap;
+    }
+
     public int getAge() {
         return age;
     }

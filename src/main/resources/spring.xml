@@ -4,16 +4,20 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="org.example.Alien">
+    <bean id="alien" class="org.example.Alien" autowire="byType">
+
+<!--        <property name="comp" ref="Lap"/>-->
+<!--        <property name="comp" ref="Desc"/>-->
 
 <!--        <constructor-arg index="0" value="31"/> index based-->
 <!--        <constructor-arg index="1" ref="Lap"/>-->
 
-<!--        <constructor-arg name="age" value="31"/>  name based but it will follow sequence. one more is type based when u have different types-->
+<!--        <constructor-arg name="age" value="31"/>-->
 <!--        <constructor-arg name="org.example.Laptop" ref="Lap"/>-->
 
     </bean>
 
-    <bean id="Lap" class="org.example.Laptop"></bean>
+    <bean id="comp" class="org.example.Laptop" primary="true"/>
+<bean id="comp1" class="org.example.Desktop" />
 
 </beans>

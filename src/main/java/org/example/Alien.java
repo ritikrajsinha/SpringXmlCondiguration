@@ -7,32 +7,25 @@ public class Alien {
 
     private int age;
 
-    private Laptop lap;
+    private Computer comp;
 
-    public Alien(int age, Laptop lap) {
-        this.age = age;
-        this.lap = lap;
-    }
 
     public int getAge() {
         return age;
     }
 
-    public Laptop getLap() {
-        return lap;
+
+    public Computer getComp() {
+        return comp;
     }
 
-    public void setLap(Laptop lap) {
-        this.lap = lap;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public void setComp(Computer comp) {
+        this.comp = comp;
     }
 
     public  void coding()
     {
         System.out.println("coding");
-        lap.compile();
+        comp.compile();
     }
 }

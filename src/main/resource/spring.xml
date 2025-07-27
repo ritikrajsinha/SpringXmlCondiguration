@@ -4,6 +4,13 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="org.example.Alien"></bean>
+    <bean id="alien" class="org.example.Alien">
+        <property name="age" value="31"></property> <!--        setter injection-->
+        <property name="lap" ref="Lap"></property>
+
+
+    </bean>
+
+    <bean id="Lap" class="org.example.Laptop"></bean>
 
 </beans>
